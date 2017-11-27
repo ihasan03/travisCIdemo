@@ -1,8 +1,9 @@
 language: java
 before_script:
-    - bash pull.sh
+  - bash pull.sh
 after_success:
-    - bash push.sh
+  - bash push.sh
 env:
-    global:
-        - secure: "WdA3UELNSjnzkzmjUHpRAFG3C/KTe64AkWzkpIDCHTETQvELtuN5+HR+7VfTDmiLqYyU9el/maAad0bS7EPbdwAfv0QfvImYVZ8bV5BU75Sv/3WD0nTZ8uSfSlSv2Uy04XTece50xtEEijNvGyfJvPoAMisQbXMpwZcaTpIY+wz+U2pSSIUjpMAFyBcLDEdFS7jWqmO28rUjzqMT1BHwUiBCQZq8ZkV7t0vEMkXwaQ5sD5lNLUy8KN/rPjjHiS8MqA4Ey+YVZmtZKNTUop9bPNLd58yZhQrEcKdA1njPHfF4N6y5ZyfgRPzuiaYleFLaRbWfofMDVLUqRiYgpCsO+Yk6EgS5/Ou0rduc9HxJ/pA66Tz4JLEVN8fXv+NR+oUWtj9WB1n8JJEcrwdhGBCOv4W/N0jwcTJwV8ED8S2/jCPo3V+VvXRzgC/6fcK27YaRl5TYr7hat7cVBm11afEzwYnfbon7v+f0EmIK7m+NGkCxMj/dUeMa7hRZdIi8BN+t8KPVNaojE6Z0kSLungZz7qgmM3nigsqKS4l/YnWeGAKcRvWroXA2hv1VIL7nRNIsBjJ1IFaQbH8nKTt14iqHXTdGMQebPpuSK/+DrfT4xIuXxcrr1tUF7mSuT/fBbRWRMqjZ/UMUyqeptzT7rGs+OBxbQiQkq+lFnpl7+zHXuA0="
+  global:
+    - secure: >-
+        ddgzNdEd7ZOTh8oJuBYZoFl4uYrmOKXVBs2iHINbn6rUt5Yo+lnAvS+v0EnPTF/1NddTbz8W6D1V+DIOugi1ge6WE9F0FWdlV2lnkiohsbGe8OWC+VAqCzOOunE19Yt1eLnYU29jG7FEM8f03uGBvr7Qg9lxV6GKWutzzGuaB17MOvMS45TU+z48EcBpi5thpm3NFTm/t7HbfJ12bDuaIZ4oWLrESSCceYtEQu+IEi/uz5L0E6dva0wMS603ZlKnp4+GeWOhzvwQMDQ9XAkmMcTNl19GaMPD+M7gwhJUM2XigvNBWGC9yUY3fVKuWwoX7pHrbRFHaslNWxxB+qg+IauVSV1/m6gCMTWlFuqOXJt64zFKI6UPR/ZWBtm5fdnK78AJ1uldkkez4JLubpdY0rI/r4Sxgv+oTLDlGUo6jsWaNMjMwmY5OqEB/1iVnw1EV7aa3ZdKphnjsQYPLytquXDaPYI9gmlwBMqy2bt0SJ0Jq4ULsv5uyjyIkwylM+TbvE4HdkQhGWfapb80gwUGP8kfBEn0VTkpo5ywSNsMQdKJ6vxXFdwA7aCvBVXtp6hmPPA562QC0iQJaobbeQ3y6+9oYOEj5kNlGiVRg7/0tD9+8qRwwgdphxSbo4HbzKh3SQHywLx1SHJf/iOFNy3gZVO7sikEaT6yP0zkeeLekwQ=
