@@ -5,18 +5,15 @@ LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
 
+git remote add upstream https://github.com/irfanhasan/travisCIdemo.git
+
 while true
 do
-    if [ $LOCAL = $REMOTE ]; then
-        echo "Up-to-date"
-    elif [ $LOCAL = $BASE ]; then
-        echo "Need to pull"
-        git pull upstream trunk
-        git push origin trunk
-    elif [ $REMOTE = $BASE ]; then
-        echo "Need to push"
-    else
-        echo "Diverged"
-    fi
-    sleep 300 #5 mins
+    #get updated upstream reference
+    git fetch upstream master
+    git pull upstream master
+
+    #push changes to our repo
+    git push origin master
+    sleep 120 #2 mins
 done
